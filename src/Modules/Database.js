@@ -5,10 +5,10 @@ const app = express();
 app.use(express.json());
 
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "root",
-    database: "mcartlogin",
+    host: process.env.host,
+    user: process.env.user,
+    password: process.env.password,
+    database: process.env.dbname,
 });
 
 db.connect((err) => {
