@@ -2,7 +2,6 @@ import './App.css';
 import React, { useState } from 'react';
 import TransitionDetails from './Modules/Transition_Details';
 import AddNew from './Modules/AddNew';
-import Database from './Modules/Database';
 
 
 function App() {
@@ -86,7 +85,7 @@ function App() {
         </tbody>
       </table>
       <AddNew onAdd={addNewTransition} />
-      <Database/>
+      
     </>
   );
 }
